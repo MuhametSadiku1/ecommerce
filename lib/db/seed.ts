@@ -1,5 +1,9 @@
+import { config } from "dotenv";
 import { db } from "./index";
 import { products } from "./schema";
+
+// Load .env.local file
+config({ path: ".env.local" });
 
 const nikeProducts = [
   {
